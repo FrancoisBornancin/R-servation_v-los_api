@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~leaflet/dist/leaflet.css";
+
+.map-wrapper {
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 20px;
+}
+
+.map-border{
+    border: 5px solid orange;
+    height: 87%;
+    position: relative;
+    top: 20px;
+}
+
+#map{
+    height:100%;
+    z-index: 0;
+}
+
+#stationDetail{
+    position: relative;
+    top: 25px;
+    background-color: white;
+    width: 230px;
+    left: 290px;
+    position: relative;
+    top: 44px;
+    background-color: white;
+    width: 230px;
+    left: 290px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 2px solid #009688;
+}   
+
+a{
+    color: black;
+    text-decoration: none;
+}

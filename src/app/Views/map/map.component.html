@@ -1,0 +1,17 @@
+<div class="map-wrapper" name="mapDiv">
+    <div class="map-border">
+        <div id="map">
+        </div>
+    </div>
+</div>
+
+<div name = "stationDetail" style="display: none" id = "stationDetail">
+    <div *ngFor="let t of tab">
+        <p>N° Station : {{ t.number }}</p>
+        <p>Secteur : {{ t.contractName }}</p>
+        <p>Adresse : {{ t.address }}</p>
+        <p>Vélos dispos : {{ t.totalStands.availabilities.bikes }}</p>
+    </div>
+    <button><a name = "aElement" (click)="availableBike()">Réserver un vélo</a></button>    
+</div>
+

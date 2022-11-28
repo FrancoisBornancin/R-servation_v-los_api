@@ -1,0 +1,37 @@
+<!-- Formulaire avec event (ngSubmit) récupérant les valeurs -->
+<form #myForm="ngForm" (ngSubmit)="InsertData(myForm.value)" class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Input FirstName</mat-label>
+        <input matInput type="text" name="NgName" ngModel>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Input LastName</mat-label>
+        <input matInput type="text" name="NgLastName" ngModel>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Input eMail</mat-label>
+        <input matInput type="text" name="NgEmail" ngModel>
+    </mat-form-field>           
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Input DateTime</mat-label>
+        <input matInput type="date" name="NgDate" ngModel>
+    </mat-form-field>     
+
+    <mat-checkbox class="example-margin" name="NgCheckbox" ngModel>Conditions Générales d'utilisation</mat-checkbox>
+
+    <input type="submit" id="submit">
+
+</form>
+
+<!-- L'event permet de ne pas perdre l'historique des réservations -->
+ <button><a routerLink = "/" (click)="goMap()">Retour à la carte</a></button> 
+
+<!-- 
+ Contrôle des valeurs récupérées 
+<div *ngFor="let t of localStorageTab">
+    {{ t.NgName }} - {{ t.NgLastName }} - {{ t.NgEmail }} - {{ t.NgCheckbox }} - {{ t.NgDate }} - {{ t.StationNumber }}
+</div>
+-->
