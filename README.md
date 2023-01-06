@@ -1,6 +1,13 @@
-# MonDevoir
+# Réservations de vélos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
+
+# Fonctionnement
+
+- Chaque ville de France possède des stations de vélos
+- Chaque station a des vélos disponibles selon certaines dates
+- L'utilisateur peut réserver un vélo sur une des stations
+- S'il a déjà réservé, une proposition lui est faite 
 
 ## Development server
 
